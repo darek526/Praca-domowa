@@ -1,5 +1,5 @@
 szereg_Taylora_sin
-preprocesin nawiasy przykłady
+preprocesing nawiasy przykłady
 refaktorowanie programu +duże litery
 #include <stdio.h>
 //liczy częstotliwość występowania litery w tablicy
