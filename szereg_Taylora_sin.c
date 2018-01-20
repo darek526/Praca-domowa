@@ -26,3 +26,4 @@ int main() {
         printf("%c -> %d,\n", 'a' + x, histogram[x]);
     }
     return 0;
+}
