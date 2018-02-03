@@ -1,9 +1,9 @@
-include<stdio.h>
+#include<stdio.h>
 int main()
   //Wykonał Dariusz Soborski
 {
         printf("\nWitam policzymy elementy Ciagu Fibonacciego\n");
-        puts("VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV");
+        puts("************************************************\n");
         printf("Ktory element ciagu obliczyc?\n");
         int n;
         scanf("%d",&n);
