@@ -1,38 +1,17 @@
-#include<stdio.h>
-//Wykonał Dariusz Soborski II 2018
-int main()
-
+// ciag_Fibonaciego_rekurencja
+#include <stdio.h>
+long int Fibon(int wyraz)
 {
-    printf("\nWitam policzymy elementy Ciagu Fibonacciego\n");
-    puts("*************************************************\n");
-    printf("Ktory element ciagu obliczyc?\n");
-    int n;
-    scanf("%d",&n);
-
-    if (n==0)
-        printf("0 elemet Ciagu Fibonacciego rowna sie 0\n");
-    else if(n<=2)
-        printf("%d elementem Ciagu Fibonacciego =  1\n",n);
+    if(wyraz==1)return 1;
+    if(wyraz==2) return 1;
     else
-    {
-        int f1=1; //wartość pierwszego elementu
-        int f2=1; //wartość drugiego elementu
-        int temp; //zmienna pomocnicza
-        for(int i=3;i<=n;i++)
-        {
-            temp=f1+f2;
-            f1=f2;
-            f2=temp;
-            /*dwa przykładowe obiegi pętli:
-            temp=1+1=2;
-            f1=f2=1;
-            f2=temp=2;
-            temp=1+2=3;
-            f1=f2=2;
-            f2=temp=3 ;
-            */
-        }
-        printf("%d elementem Ciagu Fibonacciego = %d\n",n,f2);
-    }
+        return Fibon(wyraz-2)+Fibon(wyraz-1);//funkcja przechodzi sama do siebie
+
+}
+int main() {
+    int wyraz;
+    printf("Podaj ktory wyraz ciagu Fibonacjego chcesz obliczyc\n");
+    scanf("%i", &wyraz);//pobranie liczby z klawiatury
+    printf("%i wyraz ciagu Fibonaciego wynosi %i\n", wyraz, Fibon(wyraz));//wyswietla wynik
     return 0;
 }
