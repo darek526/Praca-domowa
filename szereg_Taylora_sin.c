@@ -1,29 +1,30 @@
-szereg_Taylora_sin
-preprocesing nawiasy przykłady
-refaktorowanie programu +duże litery
-
 #include <stdio.h>
-//liczy częstotliwość występowania litery w tablicy
-int main() {
-    const char ciag_zn []="Ala ma kota ";
-    //printf("%s\n", ciag_zn);
-   int histogram [26]={0};
-    char znak;
-    int licznik=0;
+#include <math.h>
+#include <stdlib.h>
+//działa przy kompilcji trzeba dodać -lm
+void main()
+{
+    int n, x1;
+    float precyzja, term, mianownik, x, sinx, sinval;
 
-    while( (znak=ciag_zn[licznik]) !=0) //
+    printf("Wpisz wartosc x w stopniach\n");
+    scanf("%f", &x);
+    x1 = x;
+    /* Zamiana stopni na radiany */
+    x = x * (3.142 / 180.0);
+    sinval = sin(x);
+    printf("Podaj parametr długości rozwiniec szeregu Taylora\n");
+    scanf("%f", &precyzja);
+    term = x;
+    sinx = term;
+    n = 1;
+    do
     {
-        if ((znak>= 'a') &&(znak<='z'))
-        {
-            ++histogram[znak-'a']; //zlicz
-        }
-        ++licznik;
-    }
-    /* alternatywna petla for zamiast while
-     * for(int x=0; ciag_zn[licznik] !=0; ++licznik)*/
-    for(int x=0; x<26; ++x)
-    {
-        printf("%c -> %d,\n", 'a' + x, histogram[x]);
-    }
-    return 0;
+        mianownik = 2 * n * (2 * n + 1);
+        term = -term * x * x / mianownik;
+        sinx = sinx + term;
+        n = n + 1;
+    } while (precyzja <= fabs(sinval - sinx));
+    printf("Sinus obliczony z szeregu Taylor = %f \n", sinx);
+    printf("Sinus obliczonu przy uzyciu funkcji biblioteki math(%d) = %f\n", x1, sin(x));
 }
