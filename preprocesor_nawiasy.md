@@ -5,7 +5,7 @@ Preprocesor
 ---------------
 Kod źródłowy tuż przed właściwą kompilacją, jest przetwarzany przez preprocesor, jest to program, który analizuje plik źródłowy (programu, biblioteki) w poszukiwaniu wszystkich wyrażeń zaczynających się od 
     
-<"#" np. #include, #define, #undef, #if #elif, #else. #endif
+    "#" np. #include, #define, #undef, #if #elif, #else. #endif
     
  Na podstawie tych instrukcji generuje on kod w "czystym" języku C, który następnie jest kompilowany przez kompilator. Ponieważ za pomocą preprocesora można niemal "sterować" kompilatorem, daje on niezwykłe możliwości, które nie były dotąd znane w innych językach programowania.
 
