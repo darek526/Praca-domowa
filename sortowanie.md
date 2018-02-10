@@ -25,3 +25,6 @@ Jedna z prostszych metod sortowania o złożoności O(n2). Polega na wyszukaniu 
 | bubble-sort| O(n<sup>2</sup>) ---- O(n<sup>2</sup>) ------- O(1) |tak| zamiana|
 | insert-sort| O(n + inv)- O(n<sup>2</sup>)------- O(1)| tak|wstawianie|
 | select-sort| O(n<sup>2</sup>)------ O(n<sup>2</sup>)-------- O(1) |nie  |  selekcja|
+
+Sortowanie przez proste wstawianie jest najbardziej efektywne i najczęściej stosowane dla małych ciągów. Z trzech przedstawionych prostych algorytmów ten jest najlepszy. Jest to także algorytm często stosowany w normalnym życiu, chociażby przy układaniu na ręce kart przy grze w brydża.
+
