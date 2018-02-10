@@ -91,3 +91,11 @@ Obydwie komendy usuwają ostatnie 2 zmiany z brancha. Im więcej daszków (^) ty
 
     git rebase -i HEAD~3
 Interaktywne zmienianie zawartości, opisów commitów. Commity mozna łączyć wtedy w jeden duży, zmienić jego opis, itd.
+
+GITHUB
+===========
+
+Github jest serwisem internetowym działającym od kwietnia 2008r. z siedzibą w San Francisco, Kalifornia, USA. Przeznaczony dla projektów programistycznych wykorzystujących system kontroli wersji Git.
+  
+  https://github.com/signup/free
+Po podaniu podtsawowych danych wybraniu loginu i hasła mamy już aktywne konto, dzięki któremu będziemy mogli tworzyć własne repozytoria, a także przeglądać i edytować inne. Wybrane konto jest darmowe, a więc nasze projekty będą typu Open Source i będą publicznie dostępne dla wszystkich odwiedzających. Jeśli natomiast zależy nam bardzo na ukryciu naszego konta należy zapłacić.
