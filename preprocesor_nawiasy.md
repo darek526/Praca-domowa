@@ -13,7 +13,7 @@ Ponieważ makra preprocesora działają na zasadzie zwykłego zastępowania napi
 
 Umieszczaj nawiasy dookoła argumentów makra kiedy to tylko możliwe. Zapewnia to, że gdy są wyrażeniami kolejność działań nie zostanie zmieniona. Na przykład:
     
->Źle: #define kwadrat(x) (x*x)
+    Źle: #define kwadrat(x) (x*x)
     Dobrze: #define kwadrat(x) ( (x)*(x) )
 Przykład: Załóżmy, że w programie makro kwadrat() zdefiniowane bez nawiasów zostało wywołane następująco:
     
