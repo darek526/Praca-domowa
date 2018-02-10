@@ -5,7 +5,7 @@ Preprocesor
 ---------------
 Kod źródłowy tuż przed właściwą kompilacją, jest przetwarzany przez preprocesor, jest to program, który analizuje plik źródłowy (programu, biblioteki) w poszukiwaniu wszystkich wyrażeń zaczynających się od 
     
-    "#" np. #include, #define, #undef, #if #elif, #else. #endif
+<"#" np. #include, #define, #undef, #if #elif, #else. #endif
     
  Na podstawie tych instrukcji generuje on kod w "czystym" języku C, który następnie jest kompilowany przez kompilator. Ponieważ za pomocą preprocesora można niemal "sterować" kompilatorem, daje on niezwykłe możliwości, które nie były dotąd znane w innych językach programowania.
 
@@ -13,7 +13,7 @@ Ponieważ makra preprocesora działają na zasadzie zwykłego zastępowania napi
 
 Umieszczaj nawiasy dookoła argumentów makra kiedy to tylko możliwe. Zapewnia to, że gdy są wyrażeniami kolejność działań nie zostanie zmieniona. Na przykład:
     
-    Źle: #define kwadrat(x) (x*x)
+>Źle: #define kwadrat(x) (x*x)
     Dobrze: #define kwadrat(x) ( (x)*(x) )
 Przykład: Załóżmy, że w programie makro kwadrat() zdefiniowane bez nawiasów zostało wywołane następująco:
     
