@@ -97,7 +97,8 @@ GITHUB
 
 Github jest serwisem internetowym działającym od kwietnia 2008r. z siedzibą w San Francisco, Kalifornia, USA. Przeznaczony dla projektów programistycznych wykorzystujących system kontroli wersji Git.
 ## Zakładanie konta.  
-  
+Jeżeli nie mamy konta, wchodzimy na stronę:
+
   https://github.com/signup/free
 
 Po podaniu podtsawowych danych wybraniu loginu i hasła mamy już aktywne konto, dzięki któremu będziemy mogli tworzyć własne repozytoria, a także przeglądać i edytować inne. Wybrane konto jest darmowe, a więc nasze projekty będą typu Open Source i będą publicznie dostępne dla wszystkich odwiedzających. Jeśli natomiast zależy nam bardzo na ukryciu naszego konta należy zapłacić.
@@ -121,9 +122,10 @@ Możemy dodać program napisany wcześniej na naszym komputerze, wystarczy wpisa
     cd nazwa_projektu
     git remote add origin git@github.com:USER/nazwa_projektu.git
     git push -u origin master
-Wchodzimy do folderu z projektem, inicjujemy połączenie z reposytorium na serwerze i wysyłamy tam kod źródłowy
+Wchodzimy do folderu z projektem, inicjujemy połączenie z repozytorium na serwerze i wysyłamy tam swoj projekt.
 
 ## Praca z repozytorium
+## Clone or download
 Projekty możemy pobrać zarówno ze swojego konta lub innych osób. Możemy to zrobić na 3 sposoby:
 
     Clone in Desktop 
@@ -136,7 +138,7 @@ zwykłe pobranie repozytorium w postaci archiwum zip
 Kopiujemy link do repozytorium, przechodzimy w kosoli do folderu w którym chcemy sklonować interesujące nas dane. Używamy polecenia:
 
     git clone 
-i kopiujemy link:
+i wlkejamy link:
 
     git clone https://github.com/nazwa_użytkownika/nazwa_projektu.git
 możemy teraz pracować na pobranym repozytorium.
